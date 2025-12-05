@@ -9,17 +9,17 @@ const Hero = () => {
      
       <div className="bg-[#002E99] rounded-3xl p-6 md:p-10 m-4 overflow-hidden">
   <div className="flex flex-row justify-between items-center gap-6 w-full">
-    {/* LEFT TEXT */}
+
     <div className="w-[48%] min-w-[160px] md:w-[50%] space-y-3 md:space-y-6">
-      <p className="w-full md:w-[90%] mt-3 md:mt-5 text-start text-sm sm:text-base md:text-lg lg:text-3xl xl:text-4xl font-semibold text-white leading-snug">
+      <p className="w-full md:w-[90%] mt-3 md:mt-5 text-start text-sm sm:text-base md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-white leading-snug">
         "Beauty That Speaks
       </p>
 
-      <p className="text-start text-sm sm:text-base md:text-lg lg:text-3xl xl:text-4xl font-semibold text-white">
+      <p className="text-start text-sm sm:text-base md:text-lg lg:text-4xl xl:text-5xl font-semibold text-white">
         Confidence"
       </p>
 
-      <p className="text-white text-start mt-3 text-xs sm:text-sm md:text-base lg:text-lg xl:text-2xl">
+      <p className="text-white text-start mt-3 text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl">
         Step into new-season styles made for confidence and comfort.
         Elevate your wardrobe with modern design.
       </p>
@@ -73,21 +73,21 @@ const Hero = () => {
       </div>
 
       
-      <div className="flex flex-col md:flex-row items-start w-full mt-10 gap-6 px-0 md:px-4">
+      <div className="flex flex-col md:flex-row items-center w-full mt-10 gap-6 px-0 md:px-4">
 
-  <div className="w-full md:w-[32%] md:mt-8 lg:w-[30%]">
+  <div className="w-full md:w-[32%] md:mt-8 lg:w-[30%] mb-5 h-full">
     <img 
       src="src/images/parachute.png" 
       alt="Hairol" 
-      className="w-full md:h-[350px] lg:h-[380px] object-cover rounded-xl"
+      className="w-full md:h-[400px] lg:h-[450px] object-cover rounded-xl"
     />
   </div>
 
-  <div className="flex-1">
+  <div className="flex-1 m-3">
 
-    <div className="flex items-center justify-between m-3">
+    <div className="flex items-center justify-between md:mb-12 lg:mt-10">
       <div>
-        <p className="text-xl md:text-2xl font-bold">Trending products</p>
+        <p className="text-xl lg:text-2xl font-bold">Trending products</p>
         <p className="text-gray-500 text-sm">Berry hues for everyone.</p>
       </div>
       <p className="text-gray-600 cursor-pointer text-sm md:text-base hover:underline">
@@ -96,7 +96,7 @@ const Hero = () => {
     </div>
 
     
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-20   mt-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-20 md:mb-5 mt-4">
 
       {trendingprod.map((imgg, idx) => (
         <div 
@@ -115,13 +115,13 @@ const Hero = () => {
             </div>
           </div>
 
-          <p className="mt-3 font-semibold text-lg">₹{imgg.amt}</p>
+          <p className="mt-3 font-semibold text-lg">{imgg.amt}</p>
           <p className="text-[#0053E2] font-semibold text-sm truncate">
             {imgg.desc}
           </p>
           <p className="text-sm font-medium text-gray-600">{imgg.rating}</p>
 
-          <button className="mt-3 md:mt-2 bg-[#0053E2] text-white py-1 px-4 rounded-full text-sm hover:bg-blue-700">
+          <button className="mt-3 md:mt-2 w-fit flex bg-[#0053E2] text-white py-1 px-4 rounded-full text-sm hover:bg-blue-700">
             {imgg.button}
           </button>
 

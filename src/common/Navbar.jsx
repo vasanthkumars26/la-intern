@@ -15,7 +15,8 @@ const Navbar = () => {
     <div className="w-auto shadow-sm sticky top-0 z-50 bg-[#0053E2]">
       <div className="flex items-center justify-between px-4 py-3 md:px-10">
       
-        <p className="text-[#0053E2] font-bold text-2xl"></p>
+      
+        <img src="src/images/logo.png" alt="logo" />
         <div className="hidden md:flex relative w-1/2">
           <input
             type="text"

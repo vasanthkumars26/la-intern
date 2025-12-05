@@ -7,8 +7,8 @@ const Footer = () => {
 
         
         <div>
-          <div className="w-48 h-32 border border-white flex items-center justify-center text-lg font-semibold">
-            LOGO
+          <div className="w-48 h-32 lg:border lg:border-white  flex items-center justify-center text-lg font-semibold">
+            <img src="src/images/logo.png" alt="logo" className="md:mr-20" />
           </div>
 
           <p className="text-sm mt-4">@ 2025 Least action company. All rights reserved.</p>
